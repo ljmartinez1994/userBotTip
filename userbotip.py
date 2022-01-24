@@ -54,7 +54,7 @@ if sys.version_info[0] == 3 and sys.version_info[1] >= 8 and sys.platform.starts
     
 @client.on(events.NewMessage)
 async def receive_message(event):
-  print ("ENTROOOOOOOOOOOOOOOOO")
+  print ("ENTROOOOOOOOOOOOOOOOO") 
   if 'hello' in event.raw_text:
         await event.reply('hi!')  
 
