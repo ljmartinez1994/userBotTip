@@ -29,6 +29,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_SECRET_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP}} #Must be unique in Heroku
           heroku_email: ${{secrets.HEROKU_EMAIL}}
+          buildpack: "https://github.com/HashNuke/heroku-buildpack-elixir.git"
       - name: Deployed successfully
         run: |
           echo Deployed!!
